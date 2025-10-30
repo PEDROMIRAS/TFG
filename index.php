@@ -9,7 +9,7 @@
     <title>Acho Q Como</title>
 </head>
 <body>
-    <!--- <?php include('public/header.php')?>  -->
+    <?php include('public/header.php')?>
     <!-- ===== MAIN ===== -->
     <main>
         <!-- ----- BANNER ----- -->
@@ -71,7 +71,7 @@
             <img src="assets/nosotros.jpg" alt="Equipo de Acho K Como">
         </section>
     </main>
-    <!--- <?php include('public/footer.php')?>  -->
+    <?php include('public/footer.php')?>
     <!-- ===== JAVASCRIPT ===== -->
     <script src="JS/index.js"></script>
 </body>
