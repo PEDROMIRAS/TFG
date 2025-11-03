@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/login.css">
+    <script src="https://kit.fontawesome.com/f97389225c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/index.css">
     <title>Login Page</title>
 </head>
 <body>
@@ -30,8 +32,6 @@
             </form>
         </div>
     </main>
-    <?php
-        include('footer.php');
-    ?>
+    <?php include('footer.php')?>
 </body>
 </html>

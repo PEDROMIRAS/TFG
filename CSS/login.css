@@ -24,4 +24,59 @@ body {
 
 header {
     background-color: var(--verde-pastel);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+header button{
+    background-color: var(--verde-menta);
+    color: var(--verde-oscuro);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+}
+header button:hover{
+    background-color: var(--verde-pastel);
+    transform: scale(1.05);
+
+}
+
+/* ====== MAIN ====== */
+main {
+    max-width: 1200px;                          /* Ancho máximo del contenido */
+    margin: 0 auto;                             /* Centra horizontalmente */
+    padding: 30px 20px;                         /* Espaciado interno */
+}
+
+/* ====== FORM ====== */
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    gap: 20px;
+    border: 1px solid var(--verde-oscuro);
+}
+
+.form-group{
+    display: block;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid var(--verde-oscuro);
+    padding: 10px;
+}
+
+.form-group button{
+    background-color: var(--verde-menta);
+    color: var(--verde-oscuro);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+
 }
