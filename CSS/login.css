@@ -1,0 +1,27 @@
+/* PALETA DE COLORES - Variables reutilizables en todo el documento */
+:root {
+    --verde-claro: #F2FBF6;      /* Color de fondo principal */
+    --verde-pastel: #E6F7EA;     /* Para secciones destacadas */
+    --verde-menta: #D6EFD7;      /* Efectos hover y secundarios */
+    --verde-medio: #A8D6A3;      /* Botones y footer */
+    --verde-oscuro: #12321A;     /* Textos y bordes */
+}
+
+/* Reset básico para eliminar estilos por defecto del navegador */
+* {
+    margin: 0;                   /* Elimina márgenes por defecto */
+    padding: 0;                  /* Elimina padding por defecto */
+    box-sizing: border-box;      /* Incluye padding y border en el ancho total */
+}
+
+/* Estilos generales del body */
+body {
+    font-family: "Poppins", Arial, sans-serif;  /* Fuente principal con fallback */
+    background-color: var(--verde-claro);       /* Fondo verde claro */
+    color: var(--verde-oscuro);                 /* Color de texto principal */
+    min-height: 100vh;                          /* Mínimo altura de ventana completa */
+}
+
+header {
+    background-color: var(--verde-pastel);
+}
