@@ -22,61 +22,161 @@ body {
     min-height: 100vh;                          /* Mínimo altura de ventana completa */
 }
 
+/* ====== HEADER ====== */
 header {
     background-color: var(--verde-pastel);
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
-    padding: 10px;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-header button{
+
+header button {
     background-color: var(--verde-menta);
     color: var(--verde-oscuro);
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 10px 20px;
-    margin: 0 10px;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
-header button:hover{
+
+header button:hover {
     background-color: var(--verde-pastel);
     transform: scale(1.05);
-
 }
 
 /* ====== MAIN ====== */
 main {
-    max-width: 1200px;                          /* Ancho máximo del contenido */
-    margin: 0 auto;                             /* Centra horizontalmente */
-    padding: 30px 20px;                         /* Espaciado interno */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
 }
 
-/* ====== FORM ====== */
-.login-container{
+/* ====== CONTENEDOR DE LOGIN ====== */
+.login-container {
+    background-color: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+}
+
+.login-container h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--verde-oscuro);
+}
+
+/* ====== FORMULARIO ====== */
+.login-container form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
     gap: 20px;
-    border: 1px solid var(--verde-oscuro);
 }
 
-.form-group{
-    display: block;
+.form-group {
+    display: flex;
     flex-direction: column;
-    gap: 10px;
-    border: 1px solid var(--verde-oscuro);
-    padding: 10px;
+    gap: 8px;
 }
 
-.form-group button{
-    background-color: var(--verde-menta);
+.form-group label {
+    font-weight: 600;
     color: var(--verde-oscuro);
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
+    font-size: 14px;
+}
 
+.form-group input {
+    padding: 12px 15px;
+    border: 2px solid var(--verde-menta);
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Poppins", Arial, sans-serif;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: var(--verde-medio);
+}
+
+/* Botón de submit del formulario */
+.login-container form button[type="submit"] {
+    background-color: var(--verde-medio);
+    color: var(--verde-oscuro);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.login-container form button[type="submit"]:hover {
+    background-color: var(--verde-menta);
+    transform: scale(1.02);
+}
+
+/* ====== ENLACE DE REGISTRO ====== */
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--verde-oscuro);
+}
+
+.register-link a {
+    color: var(--verde-medio);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.register-link a:hover {
+    color: var(--verde-oscuro);
+    text-decoration: underline;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    .login-container {
+        padding: 30px 20px;
+    }
+
+    .login-container h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 25px 15px;
+    }
+
+    header button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
 }

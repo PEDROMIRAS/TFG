@@ -11,7 +11,7 @@
     <footer>
         <div class="footer-content">
             <div class="logo-footer">
-                <img src="assets/logo2.png" alt="Logo de Acho K Como" width="100" height="100">
+                <img src="/assets/logo2.png" alt="Logo de Acho K Como" width="100" height="100">
                 <h3>Acho Q Como</h3>
             </div>
             <div class="footer-links">
