@@ -23,20 +23,20 @@
             <h1>Registro</h1>
             <form action=" " method="post">
                 <div class="form-group">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required placeholder="Nombre de usuario">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required placeholder="Contraseña">
-                </div>
-                <div class="form-group">
                     <label for="password">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
                 </div>
                 <div class="form-group">
                     <label for="password">Apellidos:</label>
                     <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos">
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required placeholder="Nombre de usuario">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Contraseña">
                 </div>
                 <div class="form-group">
                     <label for="password">Dirección:</label>
