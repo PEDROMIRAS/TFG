@@ -19,8 +19,8 @@
             <ul>
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="restaurantes.html">Restaurantes</a></li>
-                <li><a href="registro.php">Registro</a></li>
-                <li><a href="./public/login.php">Login</a></li>
+                <li><a href="./public/registro.php">Registro</a></li>
+                <li><a href="./public/inicioSes.php">Inicio de sesión</a></li>
                 <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
