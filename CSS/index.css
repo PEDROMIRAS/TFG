@@ -24,15 +24,15 @@ body {
 
 /* ====== HEADER ====== */
 header {
-    background: linear-gradient(90deg, var(--verde-medio), var(--verde-menta), var(--verde-pastel)); /* Gradiente horizontal */
+    background: linear-gradient(180deg, var(--verde-medio), var(--verde-menta), var(--verde-pastel)); /* Gradiente horizontal */
     padding: 15px 40px;                         /* Espaciado interno */
     display: flex;                              /* Layout flexible */
     justify-content: space-between;             /* Espacia elementos a los extremos */
-    align-items: center;                        /* Centra verticalmente */
+    align-items:center;                        /* Centra verticalmente */
     position: sticky;                           /* Se mantiene fijo al hacer scroll */
     top: 0;                                     /* Pegado a la parte superior */
     z-index: 1000;                              /* Aparece sobre otros elementos */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil */      
 }
 
 /* Logo del header */
