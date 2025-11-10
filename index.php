@@ -13,7 +13,7 @@
     <!-- ===== MAIN ===== -->
     <main>
         <!-- ----- BANNER ----- -->
-        <section class="banner">
+        <section  id = "inicio" class="banner">
             <div class="imgBanner">
                 <img src="assets/banner.jpg" alt="Comida deliciosa servida en mesa">
             </div>
@@ -25,14 +25,13 @@
         </section>
 
         <!-- ----- BÚSQUEDA ----- -->
-        <section class="busqueda">
+        <section id= "restaurantes" class="busqueda">
             <div id="botonBusqueda">
-                <button type="button">Restaurantes</button>
+                <a href="./public/restaurantes.php">Restaurantes</a>
             </div>
             <div id="busqueda">
                 <form action="" method="post">
                     <input type="search" name="search" placeholder="Buscar restaurante" aria-label="Buscar restaurante">
-                    <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </div>
         </section>

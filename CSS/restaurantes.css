@@ -1,0 +1,63 @@
+/* PALETA DE COLORES - Variables reutilizables en todo el documento */
+:root {
+    --verde-claro: #F2FBF6;      /* Color de fondo principal */
+    --verde-pastel: #E6F7EA;     /* Para secciones destacadas */
+    --verde-menta: #D6EFD7;      /* Efectos hover y secundarios */
+    --verde-medio: #A8D6A3;      /* Botones y footer */
+    --verde-oscuro: #12321A;     /* Textos y bordes */
+}
+
+/* Reset básico para eliminar estilos por defecto del navegador */
+* {
+    margin: 0;                   /* Elimina márgenes por defecto */
+    padding: 0;                  /* Elimina padding por defecto */
+    box-sizing: border-box;      /* Incluye padding y border en el ancho total */
+}
+
+/* Estilos generales del body */
+body {
+    font-family: "Poppins", Arial, sans-serif;  /* Fuente principal con fallback */
+    background-color: var(--verde-claro);       /* Fondo verde claro */
+    color: var(--verde-oscuro);                 /* Color de texto principal */
+    min-height: 100vh;                          /* Mínimo altura de ventana completa */
+}
+
+/* ====== HEADER ====== */
+header {
+    background-color: var(--verde-pastel);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header button {
+    background-color: var(--verde-menta);
+    color: var(--verde-oscuro);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header button:hover {
+    background-color: var(--verde-pastel);
+    transform: scale(1.05);
+}
+
+/* ====== MAIN ====== */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+}

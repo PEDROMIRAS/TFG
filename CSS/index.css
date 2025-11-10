@@ -136,7 +136,8 @@ main {
 }
 
 /* Botón de búsqueda */
-.busqueda button {
+.busqueda a {
+    text-decoration: none;                      /* Sin subrayado */;
     background-color: var(--verde-medio);       /* Fondo verde medio */
     border: none;                               /* Sin borde */
     color: var(--verde-oscuro);                 /* Color del texto */
@@ -148,7 +149,7 @@ main {
 }
 
 /* Efecto hover en botón de búsqueda */
-.busqueda button:hover {
+.busqueda a:hover {
     background-color: var(--verde-menta);       /* Cambia el fondo */
     transform: scale(1.05);                     /* Aumenta el tamaño */
 }
